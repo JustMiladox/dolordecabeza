@@ -1,7 +1,7 @@
 import re
 import os
 from telegram.ext import Updater, MessageHandler, CommandHandler, Filters
-from telegram.error import Forbidden
+from telegram.error import Unauthorized
 
 TOKEN = os.getenv("TOKEN")
 ARCHIVO_IDS = "ids.txt"
