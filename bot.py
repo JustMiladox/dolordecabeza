@@ -50,7 +50,7 @@ def detectar_ids(update, context):
         try:
             update.message.delete()
             mensajes_borrados += 1
-        except Forbidden:
+        except Unauthorized:
             pass
         except:
             pass
